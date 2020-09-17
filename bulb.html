@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function light(value) {
+			var pic;
+			if (value==0) {
+				pic="images/off.jpg";
+			}
+			else{
+				pic="images/on.jpg";
+			}
+			document.getElementById('bulb').src = pic;
+		}
+	</script>
+	<img id="bulb" src="images/off.jpg">
+	<br>
+<button onclick="light(1)"> ON </button>
+<button onclick="light(0)"> OFF </button>
+</body>
+</html>
